@@ -1,0 +1,20 @@
+{
+	"name": "Evolv Sensor Management Client - Cloud",
+	"filename" : "evolv-sensor-management-cloud-client",
+	"title" : "Evolv Sensor Management - Cloud",
+	"build": {
+		"version": "default-override-via-args",
+		"build": "default-override-via-args",
+		"date": "default-override-via-args",
+		"android" : "default-override-via-args"
+	},
+	"client": {
+		"port" : "8000",
+		"protocol" : "http",
+		"context" : "/",
+		"host": "localhost",
+		"prefix": "sensor-management",
+		"os": "ANDROID",
+		"deviceType" : "TABLET"
+	}
+}

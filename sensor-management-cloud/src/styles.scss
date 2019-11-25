@@ -1,0 +1,20 @@
+
+
+.job-request-create-dialog-content {
+
+	mat-vertical-stepper {
+		padding: 0 !important;
+
+		.mat-vertical-content {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+	}
+
+	// Reduce the padding when in vertical/phone layout
+	.mat-vertical-stepper-header {
+		padding: 5px;
+	}
+
+}
+

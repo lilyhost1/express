@@ -1,0 +1,1 @@
+mvn clean install -e -P cordova -Dhost=192.168.0.20 -Dport=8005

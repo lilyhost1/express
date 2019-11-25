@@ -1,0 +1,36 @@
+{
+  "name": "evolv-sensor-management-cloud-client-cordova",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Evolv Sensor Management Cloud Client",
+  "files": [],
+  "devDependencies": {
+    "evolv-client-cordova": "../../../libraries/platform/cordova"
+  },
+  "dependencies": {
+    "cordova-android": "7.1.2",
+    "cordova-plugin-media": "4.0.0",
+    "cordova-plugin-splashscreen": "5.0.2",
+    "cordova-plugin-statusbar": "2.4.1",
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-crosswalk-webview": "2.4.0",
+    "cordova-plugin-fullscreen": "1.2.0",
+    "cordova-plugin-ionic-keyboard": "2.0.5",
+    "cordova-plugin-app-launcher": "0.4.0"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-app-launcher": {},
+      "cordova-plugin-media": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-crosswalk-webview": {},
+      "cordova-plugin-fullscreen": {},
+      "cordova-plugin-ionic-keyboard": {}
+    }
+  }
+}

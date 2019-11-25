@@ -1,0 +1,33 @@
+<mat-toolbar color="primary">
+	<h1>Evolv Agent</h1>
+</mat-toolbar>
+
+<div class="layout-column layout-padding">
+
+	<button mat-button [routerLink]="['/home']" class="icon-label-button" [routerLinkActive]="['active']" (click)="sidenav.close()">
+		<mat-icon class="large">dashboard</mat-icon>
+		Dashboard
+	</button>
+
+	<button mat-button [routerLink]="['/sensors']" class="icon-label-button" [routerLinkActive]="['active']" (click)="sidenav.close()">
+		<mat-icon class="large">device_hub</mat-icon>
+		Sensors
+	</button>
+
+	<button mat-button [routerLink]="['/jobs']" class="icon-label-button" [routerLinkActive]="['active']" (click)="sidenav.close()">
+		<mat-icon class="large">work</mat-icon>
+		Jobs
+	</button>
+
+	<button mat-button logout class="icon-label-button" (click)="sidenav.close() && clearStorage()">
+		<mat-icon class="large">power_settings_new</mat-icon>
+		Sign Out
+	</button>
+
+</div>
+
+<mat-toolbar class="version-toolbar tertiary">Version&nbsp;<span client-version></span>
+</mat-toolbar>
+
+
+

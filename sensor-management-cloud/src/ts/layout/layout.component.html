@@ -1,0 +1,17 @@
+<mat-sidenav-container class="flex layout-fill layout-column">
+	<mat-sidenav #sidenav class="flex layout-column">
+		<sidebar-primary class="layout-column" [sidenav]="sidenav"></sidebar-primary>
+	</mat-sidenav>
+	<mat-sidenav-content class="flex layout-column">
+		<header [sidenav]="sidenav" class="flex-nogrow"></header>
+		<div class="flex layout-fill layout-row">
+			<!-- NOTE : classes can't be applied to router-outlet - the content gets inserted afterwards -->
+			<router-outlet></router-outlet>
+			<!--<sidebar-secondary class="flex-nogrow"></sidebar-secondary>-->
+		</div>
+	</mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+

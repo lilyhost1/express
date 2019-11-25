@@ -1,0 +1,25 @@
+{
+	"name": "evolv-sensor-management-cloud",
+	"version": "1.0.0",
+	"scripts": {
+		"ng": "ng",
+		"start": "ng serve",
+		"build": "ng build",
+		"test": "ng test",
+		"lint": "ng lint",
+		"e2e": "ng e2e"
+	},
+	"private": true,
+	"dependencies": {
+
+	},
+	"devDependencies": {
+		"@angular-builders/custom-webpack" : "2.4.1",
+		"@angular-builders/dev-server" : "2.2.3"
+	},
+	"workspaces": [
+		"../../libraries/platform/web",
+		"../../libraries/sensor/common/web",
+		"../../libraries/sensor/management/web"
+	]
+}

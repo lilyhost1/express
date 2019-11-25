@@ -1,0 +1,31 @@
+version: 0.2
+
+environment_variables:
+  plaintext:
+    HOST: "localhost"
+    PORT: "8005"
+
+phases:
+  install:
+    commands:
+      - javac -version
+      - echo Installing MVN to work with java/android container
+      # Default apt-get repos only include mvn 3.0.5 ... we need 3.1.+
+      #- apt-get purge maven maven2 maven3
+      - add-apt-repository ppa:andrei-pozolotin/maven3
+      - apt-get update
+      - apt-get install -y maven3
+      - mvn -version
+  build:
+    commands:
+    - printenv
+    - cd clients/applications/sensor-management-cloud
+    - mvn package -Dclient.version="1.0.0-$(date +%Y-%m-%d)" -Dhost=$HOST -Dport=$PORT
+
+artifacts:
+  files:
+    - 'clients/applications/sensor-operator/assemble/cordova/*.apk'
+    - 'clients/applications/sensor-operator/target/*.zip'
+    - 'clients/applications/sensor-management-cloud/assemble/cordova/*.apk'
+    - 'clients/applications/sensor-management-cloud/target/*.zip'
+  discard-paths: yes

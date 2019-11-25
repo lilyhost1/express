@@ -1,0 +1,62 @@
+<mat-toolbar class="small secondary">
+	<mat-icon>dashboard</mat-icon>
+	<h2 class="mat-title">Dashboard</h2>
+</mat-toolbar>
+
+
+<div class="view-body loadable-placeholder">
+
+	<mat-grid-list [cols]="columns" [rowHeight]="'1:1'" [gutterSize]="'1em'" class="">
+		<mat-grid-tile class="" [routerLink]="['/sensors']">
+			<div class="grid-content">
+				<mat-icon [ngClass]="[iconClass]">device_hub</mat-icon>
+			</div>
+			<mat-grid-tile-footer class="">
+				<h3>
+					<div>Sensors</div>
+				</h3>
+			</mat-grid-tile-footer>
+		</mat-grid-tile>
+		<mat-grid-tile class="" [routerLink]="['/jobs']">
+			<div class="grid-content">
+				<mat-icon [ngClass]="[iconClass]">work</mat-icon>
+			</div>
+			<mat-grid-tile-footer class="">
+				<h3>
+					<div>Jobs</div>
+				</h3>
+			</mat-grid-tile-footer>
+		</mat-grid-tile>
+		<!-- <mat-grid-tile class="">
+			<div class="grid-content">
+				<mat-icon [ngClass]="[iconClass]">insert_chart_outlined</mat-icon>
+			</div>
+			<mat-grid-tile-footer class="">
+				<h3>
+					<div>Reports</div>
+				</h3>
+			</mat-grid-tile-footer>
+		</mat-grid-tile>
+		<mat-grid-tile class="">
+			<div class="grid-content">
+				<mat-icon [ngClass]="[iconClass]">settings</mat-icon>
+			</div>
+			<mat-grid-tile-footer class="">
+				<h3>
+					<div>Settings</div>
+				</h3>
+			</mat-grid-tile-footer>
+		</mat-grid-tile>
+		<mat-grid-tile class="">
+			<div class="grid-content">
+				<mat-icon [ngClass]="[iconClass]">people</mat-icon>
+			</div>
+			<mat-grid-tile-footer class="">
+				<h3>
+					<div>Users</div>
+				</h3>
+			</mat-grid-tile-footer>
+		</mat-grid-tile> -->
+	</mat-grid-list>
+
+</div>

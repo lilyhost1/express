@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.evolv.sensor.cloud.managment.client.web</groupId>
+	<artifactId>evolv-sensor-management-cloud-client-web</artifactId>
+	<packaging>pom</packaging>
+
+	<name>Evolv Sensor Management IoT/Cloud Web Client</name>
+
+	<parent>
+		<groupId>com.evolv.client</groupId>
+		<artifactId>platform</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../../libraries/platform/web/pom.xml</relativePath>
+	</parent>
+
+	<properties>
+		<project.filename>evolv-sensor-management-cloud-client</project.filename>
+	</properties>
+
+	<dependencies>
+	</dependencies>
+
+</project>

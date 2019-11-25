@@ -1,0 +1,20 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"outDir": "../out-tsc/app",
+		"baseUrl": "./",
+		"module": "es2015",
+		"types": [
+			"hammerjs"
+		],
+		"paths" : {
+			"ngx-logger" : ["../node_modules/ngx-logger"],
+			"@angular*" : ["../node_modules/@angular*"],
+			"@uirouter/angularjs" : ["../node_modules/@uirouter/angularjs/lib"],
+			"angular2-uuid" : ["../node_modules/angular2-uuid"],
+			"lodash" : ["../node_modules/lodash"],
+			"angular-safeguard" : ["../node_modules/angular-safeguard"],
+			"rxjs" : ["../node_modules/rxjs"]
+		}
+	}
+}

@@ -1,0 +1,42 @@
+<mat-toolbar class="layout-row small secondary">
+	<mat-icon>work</mat-icon>
+	<h3>Jobs ({{jobs?.length}})</h3>
+	<span class="flex"></span>
+	<button *ngIf="this.Manageable()" mat-button (click)="create()" class="">Create Job</button>
+</mat-toolbar>
+
+<div class="view-body loadable-placeholder">
+
+	<loader *ngIf="loading === true"></loader>
+
+	<div class="" *ngIf="jobs?.length === 0">No Jobs Found.</div>
+
+	<table *ngIf="jobs && jobs.length > 0" >
+		<thead>
+		<tr>
+			<td>Created</td>
+			<td>Description</td>
+			<td>Status</td>
+			<td fxShow.lt-md="false">Sensors</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr *ngFor="let job of jobs">
+			<td>{{job.created | date : 'short'}}</td>
+			<td>
+				<div style="font-weight: bold;">{{job.id}}</div>
+				<div>{{job.description}}<br/>&nbsp;</div>
+			</td>
+			<td>{{'sensor.job.request.status.' + job.status | translate}}</td>
+			<td fxShow.lt-md="false">
+				<div *ngFor="let sensorId of job.sensors">
+					<sensor-reference [sensorId]="sensorId" [sensors]="sensors"></sensor-reference>
+				</div>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+
+</div>
+
+
